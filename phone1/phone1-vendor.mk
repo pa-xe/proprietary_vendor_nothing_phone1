@@ -666,7 +666,6 @@ PRODUCT_PACKAGES += \
     libsoc_helper \
     libsoc_helper_jni \
     libssrec_phone1 \
-    libstagefright_soft_qtiflacdec \
     libsystem_health_mon \
     libthermalclient \
     libwfddisplayconfig_proprietary \
@@ -683,7 +682,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifidisplaysession@1.0_vendor \
     vendor.qti.voiceprint@1.0 \
     libFileMux_proprietary \
-    libOmxVideoDSMode \
     libadm \
     libadpcmdec \
     libdirac \
