@@ -1418,6 +1418,27 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libstagefright_soft_qtiflacdec",
+	owner: "nothing",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libstagefright_soft_qtiflacdec.so"],
+			shared_libs: ["libstagefright_softomx", "libstagefright_foundation", "libutils", "liblog", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libstagefright_soft_qtiflacdec.so"],
+			shared_libs: ["libstagefright_softomx", "libstagefright_foundation", "libutils", "liblog", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libsystem_health_mon",
 	owner: "nothing",
 	strip: {
@@ -1751,6 +1772,24 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "32",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libOmxVideoDSMode",
+	owner: "nothing",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libOmxVideoDSMode.so"],
+			shared_libs: ["liblog", "libmmosal_vendor", "libutils", "libwfdcommonutils_proprietary", "libwfdmmservice_proprietary", "libbinder", "libwfdutils_proprietary", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
