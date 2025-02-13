@@ -692,7 +692,6 @@ PRODUCT_PACKAGES += \
     libmmrtpdecoder_proprietary \
     libmmrtpencoder_proprietary \
     libsmwrapper \
-    libsn100u_fw \
     libsurround_3mic_proc \
     libwfdaac_vendor \
     libwfdcodecv4l2_proprietary \
@@ -1009,6 +1008,7 @@ PRODUCT_PACKAGES += \
     libsensorcal \
     libsensorslog \
     libsi \
+    libsn100u_fw \
     libsns_api \
     libsns_device_mode_stub \
     libsns_fastRPC_util \
