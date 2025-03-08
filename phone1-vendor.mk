@@ -7,8 +7,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/odm/etc/aac_richtap.config:$(TARGET_COPY_OUT_ODM)/etc/aac_richtap.config \
-    vendor/nothing/phone1/proprietary/system/etc/permissions/com.dirac.acs.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.dirac.acs.xml \
-    vendor/nothing/phone1/proprietary/system/etc/sysconfig/preinstalled-packages-dirac.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/preinstalled-packages-dirac.xml \
+    vendor/nothing/phone1/proprietary/system/etc/sysconfig/preinstalled-packages-audioeffect.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/preinstalled-packages-audioeffect.xml \
     vendor/nothing/phone1/proprietary/system_ext/etc/hdr_config/ans_off/ans_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/ans_off/ans_config.txt \
     vendor/nothing/phone1/proprietary/system_ext/etc/hdr_config/ans_on/ans_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/ans_on/ans_config.txt \
     vendor/nothing/phone1/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_BiquadHPF_config.txt \
@@ -190,7 +189,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/nothing/phone1/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
     vendor/nothing/phone1/proprietary/vendor/etc/dirac/dirac_resource.dar:$(TARGET_COPY_OUT_VENDOR)/etc/dirac/dirac_resource.dar \
-    vendor/nothing/phone1/proprietary/vendor/etc/dirac/interface.json:$(TARGET_COPY_OUT_VENDOR)/etc/dirac/interface.json \
     vendor/nothing/phone1/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/nothing/phone1/proprietary/vendor/etc/init/android.hardware.authsecret@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.authsecret@1.0-service-qti.rc \
     vendor/nothing/phone1/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
@@ -297,8 +295,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/etc/lvacfs_params/4mic/audiozoom_13.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/4mic/audiozoom_13.txt \
     vendor/nothing/phone1/proprietary/vendor/etc/lvacfs_params/4mic/audiozoom_4.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/4mic/audiozoom_4.txt \
     vendor/nothing/phone1/proprietary/vendor/etc/media/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media/video_system_specs.json \
-    vendor/nothing/phone1/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
-    vendor/nothing/phone1/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     vendor/nothing/phone1/proprietary/vendor/etc/media_codecs_performance_yupik_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_yupik_v0.xml \
     vendor/nothing/phone1/proprietary/vendor/etc/media_codecs_performance_yupik_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_yupik_v1.xml \
     vendor/nothing/phone1/proprietary/vendor/etc/media_codecs_yupik_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_yupik_v0.xml \
@@ -350,6 +346,8 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
     vendor/nothing/phone1/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
     vendor/nothing/phone1/proprietary/vendor/etc/sensors/config/kodiak_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kodiak_ak991x_0.json \
+    vendor/nothing/phone1/proprietary/vendor/etc/sensors/config/kodiak_altek_icm4x6xa_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kodiak_altek_icm4x6xa_0.json \
+    vendor/nothing/phone1/proprietary/vendor/etc/sensors/config/kodiak_altek_idp_icm4x6xa_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kodiak_altek_idp_icm4x6xa_0.json \
     vendor/nothing/phone1/proprietary/vendor/etc/sensors/config/kodiak_bu52053nvx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kodiak_bu52053nvx_0.json \
     vendor/nothing/phone1/proprietary/vendor/etc/sensors/config/kodiak_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kodiak_default_sensors.json \
     vendor/nothing/phone1/proprietary/vendor/etc/sensors/config/kodiak_dynamic_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kodiak_dynamic_sensors.json \
@@ -403,6 +401,13 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/etc/sensors/config/lahaina_vertigo_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_vertigo_ak991x_0.json \
     vendor/nothing/phone1/proprietary/vendor/etc/sensors/config/lahaina_vertigo_lsm6dst_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_vertigo_lsm6dst_0.json \
     vendor/nothing/phone1/proprietary/vendor/etc/sensors/config/lahaina_vertigo_lsm6dst_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_vertigo_lsm6dst_1.json \
+    vendor/nothing/phone1/proprietary/vendor/etc/sensors/config/qcs6490_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qcs6490_default_sensors.json \
+    vendor/nothing/phone1/proprietary/vendor/etc/sensors/config/qcs6490_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qcs6490_power_0.json \
+    vendor/nothing/phone1/proprietary/vendor/etc/sensors/config/qcs6490_rbx_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qcs6490_rbx_icm4x6xx_0.json \
+    vendor/nothing/phone1/proprietary/vendor/etc/sensors/config/qcs6490_rbx_icp101xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qcs6490_rbx_icp101xx_0.json \
+    vendor/nothing/phone1/proprietary/vendor/etc/sensors/config/qcs6490_rbx_navmez_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qcs6490_rbx_navmez_ak991x_0.json \
+    vendor/nothing/phone1/proprietary/vendor/etc/sensors/config/qcs6490_rbx_navmez_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qcs6490_rbx_navmez_icm4x6xx_0.json \
+    vendor/nothing/phone1/proprietary/vendor/etc/sensors/config/qcs6490_rbx_navmez_rev2_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qcs6490_rbx_navmez_rev2_icm4x6xx_0.json \
     vendor/nothing/phone1/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
     vendor/nothing/phone1/proprietary/vendor/etc/sensors/config/sns_amd_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_disabled.json \
     vendor/nothing/phone1/proprietary/vendor/etc/sensors/config/sns_amd_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_enabled.json \
@@ -554,6 +559,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/firmware/goodixfp64.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp64.b06 \
     vendor/nothing/phone1/proprietary/vendor/firmware/goodixfp64.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp64.b07 \
     vendor/nothing/phone1/proprietary/vendor/firmware/goodixfp64.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp64.mdt \
+    vendor/nothing/phone1/proprietary/vendor/firmware/qps615_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/qps615_fw.bin \
     vendor/nothing/phone1/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
     vendor/nothing/phone1/proprietary/vendor/firmware/vpu20_1v.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_1v.b01 \
     vendor/nothing/phone1/proprietary/vendor/firmware/vpu20_1v.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_1v.b02 \
@@ -603,7 +609,6 @@ PRODUCT_PACKAGES += \
     btaudio_offload_if \
     android.hardware.bluetooth@1.0-impl-qti \
     audio.bluetooth_qti.default \
-    audio.primary.lahaina_phone1 \
     com.dsi.ant@1.0-impl \
     sound_trigger.primary.lahaina \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
@@ -614,16 +619,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm@1.0-impl \
     vibrator.default \
     lib_lvacfs \
-    liba2dpoffload_phone1 \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
     libadiertac \
     libaudcal \
-    libaudio_log_utils \
     libaudioalsa \
-    libaudioconfigstore \
-    libaudioparsers \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
     libbt-hidlclient \
@@ -640,7 +641,6 @@ PRODUCT_PACKAGES += \
     libgcs-ipc \
     libgcs-osal \
     libgcs \
-    libhdmipassthru \
     libidl \
     liblistensoundmodel2 \
     liblvacfs_wrapper \
@@ -661,12 +661,9 @@ PRODUCT_PACKAGES += \
     libqmi_legacy \
     libqmiservices \
     libqsocket \
-    libqtigef \
     libsmemlog \
     libsoc_helper \
     libsoc_helper_jni \
-    libssrec_phone1 \
-    libstagefright_soft_qtiflacdec \
     libsystem_health_mon \
     libthermalclient \
     libwfddisplayconfig_proprietary \
@@ -683,16 +680,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifidisplaysession@1.0_vendor \
     vendor.qti.voiceprint@1.0 \
     libFileMux_proprietary \
-    libOmxVideoDSMode \
-    libadm \
     libadpcmdec \
     libdirac \
-    libdrc \
     libdsd2pcm \
     libmmrtpdecoder_proprietary \
     libmmrtpencoder_proprietary \
     libsmwrapper \
-    libsurround_3mic_proc \
     libwfdaac_vendor \
     libwfdcodecv4l2_proprietary \
     libwfdcommonutils_proprietary \
@@ -712,7 +705,7 @@ PRODUCT_PACKAGES += \
     libwfduibcsrc_proprietary \
     libwfduibcsrcinterface_proprietary \
     libwfdutils_proprietary \
-    libdiraceffect-afm \
+    libdiraceffect_NT \
     vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
     com.qti.eeprom.abra_qtech_p24c128e_imx766_eeprom \
     com.qti.eeprom.abra_qtech_p24c128e_s5kjn1_eeprom \
@@ -887,6 +880,9 @@ PRODUCT_PACKAGES += \
     libarcsoft_super_night_raw \
     libarcsoft_superportrait \
     libarcsoft_watermark \
+    libaudio_log_utils \
+    libaudioconfigstore \
+    libaudioparsers \
     libbase64 \
     libbitmlengine \
     libbitmlenginev2 \
@@ -925,10 +921,12 @@ PRODUCT_PACKAGES += \
     libdsi_netctrl \
     libeepromcutter \
     libembmsservice \
+    libesepmconfig \
     libgf_hal \
     libhdcp1prov \
     libhdcp2p2prov \
     libhdcpsrm \
+    libhdmipassthru \
     libhdr_stub \
     libipebpsstriping \
     libipebpsstriping170 \
@@ -984,6 +982,7 @@ PRODUCT_PACKAGES += \
     libqll10 \
     libqllengine \
     libqmiextservices \
+    libqtigef \
     libqtikeymaster4 \
     libqtivibratoreffect \
     librcc \
@@ -1189,8 +1188,7 @@ PRODUCT_PACKAGES += \
     libvpp_ais_networks \
     libvpt_action_recognition \
     libencoderjpeg_jni \
-    DiracAudioControlService_DMP \
-    NothingDiracService_DMP \
+    NothingAudioEffectService \
     CACertService \
     CneApp \
     ConnectionSecurityService \

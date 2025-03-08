@@ -17,4 +17,5 @@
 -->
 <permissions>
     <feature name="com.nothing.feature.device.spacewar"/>
+    <unavailable-feature name="com.google.android.feature.CONTEXTUAL_SEARCH" />
 </permissions>
